@@ -67,7 +67,7 @@ Following were the changes done to the visual elements:
 - Following two images were added:
 
 ![First Analysis](https://raw.githubusercontent.com/rahulravindran0108/data-visualisation-udacity/tree/master/img/1.png)
-![second Analysis](https://raw.githubusercontent.com/rahulravindran0108/data-visualisation-udacity/tree/master/img/1.png)
+![second Analysis](https://raw.githubusercontent.com/rahulravindran0108/data-visualisation-udacity/tree/master/img/2.png)
 
 ## References
 
