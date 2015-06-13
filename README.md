@@ -66,8 +66,8 @@ Following were the changes done to the visual elements:
 - included bar graphs to describe the events that have caused the most economic or population damage.
 - Following two images were added:
 
-![First Analysis](https://raw.githubusercontent.com/rahulravindran0108/storm-dataset-explorer/tree/master/img/1.png)
-![second Analysis](https://raw.githubusercontent.com/rahulravindran0108/storm-dataset-explorer/tree/master/img/1.png)
+![First Analysis](https://raw.githubusercontent.com/rahulravindran0108/data-visualisation-udacity/tree/master/img/1.png)
+![second Analysis](https://raw.githubusercontent.com/rahulravindran0108/data-visualisation-udacity/tree/master/img/1.png)
 
 ## References
 
