@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="http://dimplejs.org/dist/dimple.v2.1.2.min.js"></script>
+    
+  </head>
+
+<body>
+  <nav class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <span class="navbar-brand">Storm Database Explorer</span>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active">
+          <a href="#tab-9001-1" data-toggle="tab" data-value="Results">Results</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <h3>Welcome to storm database explorer</h3>
+
+    <p>This application is based on the U.S. National Oceanic and Atmospheric Administration&#39;s (NOAA) storm database.</p>
+
+    <p>Over the years, US has been hit by many calamities viz Floods, drought, Thunder, Tornado, Hurricanes etc. This application tells a story as to what events have caused the most damage to the respective states. We will also find out what events have caused fatalities and what have caused property damage through interactive graphs and timelines.</p>
+
+    <p>Let&#39;s see what the data has to say in terms of </p>
+    <ul>
+       <li>State</li>
+       <li>Yearly Damages</li>
+    </ul>
+    <h4>Let's first take a look at yearly damages</h2>
+      <div id="lineChartContainer" class="col-md-12">
+
+      </div>
+      <div id="contents" class="col-md-12">
+          <h4>Is our lifestyle responsible for such a steep increase in weather events?</h4>
+    <p>There is a high increase in the number of events occuring over the years causing great damage to property and life. These are the signs that our environment is degrading and with our current lifestyle, we have much to lose than gain. The two most concerning damages to population and health over the years has considerably increased. Let's taka a look at a few more graphs to get an intuition.</p>
+      </div>
+      <h4>Population Impact By Year</h4>
+      <div id="stackedChartContainer" class="col-md-12">
+
+      </div>
+      <h4>Economic Impact By Years</h4>
+      <div id="stackedChartContainer1" class="col-md-12">
+
+      </div>
+      <p>As you can see in recent decade there has been a huge increase in damages to both population and health. Graph below shows the transition of how the states have been affected over the years between 1990-2011, as this has been the most turbulent period.</p>
+
+      <h4>Bubble chart showing the damages caused to different states over the years 1990-2011</h4>
+      <div id="chartContainer" class="col-md-12">
+
+  
+    
+      </div>
+      <h4>What are the events that cause the most damages to property and health?</h4>
+      <div  class="col-md-6">  
+        <img src="img/1.png" />
+      </div>
+      <div  class="col-md-6">
+        <img src="img/2.png" />  
+      </div>
+
+  </div>
+  
+</body>
+<script src="js/main.js"></script>
+<script src="js/linechart.js"></script>
+<script src="js/stackedchart.js"></script>
+</html>
