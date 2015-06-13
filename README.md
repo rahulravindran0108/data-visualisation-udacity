@@ -5,7 +5,7 @@
 
 This application is based on the U.S. National Oceanic and Atmospheric Administration's (NOAA) storm database.
 
-Source code is available on the [GitHub](https://github.com/rahulravindran0108/storm-dataset-explorer).
+Source code is available on the [GitHub](https://github.com/rahulravindran0108/data-visualisation-udacity).
 
 The application is primarily designed to tell the story oh how different events have caused loss of damage to population and economy in USA. It depicts this story with the help of the various maps and other interactive graphs.
 
