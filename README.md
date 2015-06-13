@@ -64,10 +64,7 @@ Following were the changes done to the visual elements:
 
 - Added a bubble chart to show the trend of the events and the total damage among the states over time.
 - included bar graphs to describe the events that have caused the most economic or population damage.
-- Following two images were added:
-
-![First Analysis](https://raw.github.com/rahulravindran0108/data-visualisation-udacity/tree/master/img/1.png)
-![second Analysis](https://raw.github.com/rahulravindran0108/data-visualisation-udacity/tree/master/img/2.png)
+- A detailed story with respect to what is being covered by year and by event.
 
 ## References
 
