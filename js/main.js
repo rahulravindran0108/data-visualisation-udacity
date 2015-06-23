@@ -115,3 +115,71 @@ var svg = dimple.newSvg("#chartContainer", 890, 400);
 
 
       });
+
+var svg2 = dimple.newSvg("#lineChartContainer", 890, 400);
+    d3.csv("data/years.csv", function (data) {
+      
+      var Chart = new dimple.chart(svg2, data);
+      Chart.setBounds(60, 30, 805, 305);
+      var x = Chart.addCategoryAxis("x", "YEAR");
+      x.addOrderRule("YEAR");
+      var y = Chart.addMeasureAxis("y", "COUNT");
+
+      var s = Chart.addSeries(null, dimple.plot.line);
+      Chart.draw();
+
+      y.titleShape.text("Number of Events Occuring");
+  });
+
+var svg5 = dimple.newSvg("#barChartContainer", 590, 600);
+    d3.csv("data/damages.agg.csv", function (data) {
+      
+      var myChart5 = new dimple.chart(svg5, data);
+      myChart5.setBounds(60, 30, 510, 355)
+      var x5 = myChart5.addCategoryAxis("x", "Events")
+      var y5 = myChart5.addMeasureAxis("y", "Affected");
+      myChart5.addSeries(null, dimple.plot.bar);
+      myChart5.draw();
+      y5.titleShape.text("Number of Affected people");
+    });
+
+
+var svg6 = dimple.newSvg("#barChartContainer2", 590, 600);
+    d3.csv("data/damages.agg.csv", function (data) {
+      
+      var myChart6 = new dimple.chart(svg6, data);
+      myChart6.setBounds(60, 30, 510, 355)
+      var x6 = myChart6.addCategoryAxis("x", "Events")
+      var y6 = myChart6.addMeasureAxis("y", "Damages");
+      myChart6.addSeries(null, dimple.plot.bar);
+      myChart6.draw();
+      y6.titleShape.text("Property damages in Millions(USD)");
+    });
+
+var svg1 = dimple.newSvg("#stackedChartContainer", 890, 400);
+    d3.csv("data/yearsagg.csv", function (data) {
+      
+      var myChart1 = new dimple.chart(svg1, data);
+      myChart1.setBounds(60, 30, 805, 305);
+      var x1 = myChart1.addCategoryAxis("x", "year");
+      x1.addOrderRule("year");
+      myChart1.addMeasureAxis("y", "Affected");
+
+      var s1 = myChart1.addSeries("label", dimple.plot.line);
+      myChart1.addLegend(60, 10, 500, 20, "right");
+      myChart1.draw();
+    });
+
+var svg3 = dimple.newSvg("#stackedChartContainer1", 890, 400);
+    d3.csv("data/damageagg.csv", function (data) {
+      
+      var myChart3 = new dimple.chart(svg3, data);
+      myChart3.setBounds(60, 30, 805, 305);
+      var x3 = myChart3.addCategoryAxis("x", "year");
+      x3.addOrderRule("year");
+      myChart3.addMeasureAxis("y", "Damage in Millions (USD)");
+      
+      var s3 = myChart3.addSeries("label", dimple.plot.line);
+      myChart3.addLegend(60, 10, 500, 20, "right");
+      myChart3.draw();
+    });
