@@ -1,7 +1,7 @@
 var svg = dimple.newSvg("#chartContainer", 890, 400);
       d3.csv("data/events.agg.csv", function (data) {
         data = dimple.filterData(data, "YEAR", [
-              "1990","1991","1992","1993","1994","1995","1996","1997","1998","1999","2000","2001","2002","2003","2004","2005","2006","2007","2008","2009","2010","2011"
+              "2000","2001","2002","2003","2004","2005","2006","2007","2008","2009","2010","2011"
           ]);
         var indicator = new dimple.chart(svg, data);
         // Pick blue as the default and orange for the selected month
@@ -68,15 +68,18 @@ var svg = dimple.newSvg("#chartContainer", 890, 400);
         var myChart = new dimple.chart(svg, data);
         
         myChart.setBounds(60, 50, 655, 310);
-        myChart.addMeasureAxis("x", "COUNT");
-        myChart.addMeasureAxis("y", "FATALITIES");
-        myChart.addMeasureAxis("z", "INJURIES");
+        var newx = myChart.addMeasureAxis("x", "COUNT");
+        var newy = myChart.addMeasureAxis("y", "FATALITIES");
+        var newz = myChart.addMeasureAxis("z", "INJURIES");
         myChart.addSeries(["STATE"], dimple.plot.bubble);
-        myChart.addLegend(60, 10, 710, 20);
+        myChart.addLegend(60, 10, 0, 0);
         var story = myChart.setStoryboard("YEAR",onTick);
         story.frameDuration = frame;
         story.addOrderRule("YEAR");
         myChart.draw();
+
+        newy.overrideMax = 120;
+        newx.overrideMax = 3000;
 
         myChart.legends = [];
           // Remove the storyboard label because the chart will indicate the

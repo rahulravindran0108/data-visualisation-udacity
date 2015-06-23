@@ -5,9 +5,10 @@ var svg2 = dimple.newSvg("#lineChartContainer", 890, 400);
       Chart.setBounds(60, 30, 805, 305);
       var x = Chart.addCategoryAxis("x", "YEAR");
       x.addOrderRule("YEAR");
-      Chart.addMeasureAxis("y", "COUNT");
-      var s = Chart.addSeries("YEAR", dimple.plot.line);
-      s.interpolation = "cardinal";
-      Chart.addLegend(60, 10, 800, 20, "right");
+      var y = Chart.addMeasureAxis("y", "COUNT");
+
+      var s = Chart.addSeries(null, dimple.plot.line);
       Chart.draw();
-    });
+
+      y.titleShape.text("Number of Events Occuring");
+  });
