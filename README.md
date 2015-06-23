@@ -5,7 +5,7 @@
 
 This application is based on the U.S. National Oceanic and Atmospheric Administration's (NOAA) storm database.
 
-Source code is available on the [GitHub](https://github.com/rahulravindran0108/storm-dataset-explorer).
+Source code is available on the [GitHub](https://github.com/rahulravindran0108/data-visualisation-udacity).
 
 The application is primarily designed to tell the story oh how different events have caused loss of damage to population and economy in USA. It depicts this story with the help of the various maps and other interactive graphs.
 
@@ -87,6 +87,7 @@ index.html and also the previous submission index-final.html
 
 ### Post-feedback Design
 
+<<<<<<< HEAD
 Following the feedback from the 3 interviews, I implemented the following changes:
 
 - Included a storyline to move through the content.
@@ -94,6 +95,11 @@ Following the feedback from the 3 interviews, I implemented the following change
 - Redesigned the bubble chart to display only the information necessary.
 - Kept minimalistic work for the user.
 - Included a backdrop with a gripping storyline.
+=======
+- Added a bubble chart to show the trend of the events and the total damage among the states over time.
+- included bar graphs to describe the events that have caused the most economic or population damage.
+- A detailed story with respect to what is being covered by year and by event.
+>>>>>>> 54234c5a91c71e269d38758842f1cbef5a6eb8b5
 
 ## References
 
