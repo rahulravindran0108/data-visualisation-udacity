@@ -61,9 +61,11 @@ Following are the comments from interviews conducted
 I notice a bubble graph, but what should I infer from it is not very clear. There is too much movement with respect to the axes to notice what is going on.
 
 > What questions do you have about the data?
+
 I feel I don't have sufficient backdrop to what I am looking at. Probably adding a few annotations would suffice
 
 > What do you think is the main takeaway from this visualization?
+
 I can understand that you are looking at storm data and depicting some kind of injuries and fatalities. But the transitions are too quick and the labels look squat in case of buuble graph. It also does not load very well on my browser.
 
 ### Interview 2
